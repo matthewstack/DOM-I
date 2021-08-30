@@ -153,7 +153,16 @@ emailP.textContent = siteContent["contact"]["email"];
 let footerText = document.querySelector("footer p");
 footerText.textContent = siteContent["footer"]["copyright"];
 
-let navLinks = document.querySelectorAll("nav a");
+// Nav links
 
-// for (i=0 )
+let navAppend = document.createElement("a");
+navAppend.textContent = "Append";
+let navPrepend = document.createElement("a");
+navPrepend.textContent = "Prepend";
+
+const nav = document.querySelector("nav");
+nav.appendChild(navAppend);
+nav.prepend(navPrepend);
+
+let navLinks = document.querySelectorAll("nav a");
 navLinks.forEach((link) => (link.style.color = "green"));
