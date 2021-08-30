@@ -148,3 +148,12 @@ contactH4.textContent = siteContent["contact"]["contact-h4"];
 addressP.textContent = siteContent["contact"]["address"];
 phoneP.textContent = siteContent["contact"]["phone"];
 emailP.textContent = siteContent["contact"]["email"];
+
+// Footer
+let footerText = document.querySelector("footer p");
+footerText.textContent = siteContent["footer"]["copyright"];
+
+let navLinks = document.querySelectorAll("nav a");
+
+// for (i=0 )
+navLinks.forEach((link) => (link.style.color = "green"));
